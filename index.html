@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="displayData" style="margin-top: 20px;">
+        <h1 style="margin-bottom: 10px;">Form Data</h1>
+        <table id="tableData">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Father Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Phone</th>
+                <th>Courses</th>
+                <th>Gender</th>
+                <th colspan="2">Action</th>
+            </thead>
+        </table>
+    </div>
+    <form id="form" novalidate action="">
+       <h1 class="form-heading">Registration Form</h1>
+
+        <div class="form-input">
+            <input type="text" name="fname" id="fname" placeholder="Please enter your name:"><br>
+            <input type="text" name="lname" id="lname" placeholder="Please enter last name:"><br>
+            <input type="text" name="father-name" id="father-name"  placeholder="Please enter Father name:"><br>
+            <input type="email" name="email" id="email" placeholder="Please enter email:"><br>
+            <input type="password" name="pass" id="password" autocomplete="on" placeholder="Please enter password:"><br>
+            <input type="number" name="number" id="number" placeholder="Please enter phone number">
+            <div class="course select">
+                Course: <br>
+                <input type="checkbox" id="html" name="course" value="HTML">HTML
+                <input type="checkbox" id="css" name="course" value="CSS">CSS
+                <input type="checkbox" id="javascript" name="course" value="JAVASCRIPT">JAVASCRIPT
+                <input type="checkbox" id="react" name="course" value="React">React
+                <input type="checkbox" id="node" name="course" value="Node">Node
+            </div>
+            <div class="radio select">
+                Gender: <br>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="Prefer not to say">
+                <label for="other">Prefer not to say</label>
+            </div>
+            <button id="registerBtn">Register</button>
+        </div>
+        <!-- <img src="image/image-preview-icon-picture-placeholder-vector-31284806.jpg" alt="upload image" id="preview-image" style="height: 100px; width: 100px; margin-top: 20px; margin-left: 30%;"> -->
+        <!-- <a id="preview-btn">Image preview</a> -->
+
+        
+
+    
+
+    </form>
+    <script defer src="script.js"></script>
+</body>
+</html>

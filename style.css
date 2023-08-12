@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 16px; */
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+form{
+    margin-top: 20px;
+    width: 500px;
+    height: 800px;
+    background-color: rgba(0,0,0,1);
+    border-radius: 10px;
+}
+#displayData{
+    background-color:  rgba(0,0,0,1);
+    margin-right: 1px;
+    text-align: left;
+    width: 90%;
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+}
+.form-input{
+    padding-top: 20px;
+    padding-left: 10%;
+    >input{
+        width: 70%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: #333333;
+        border: 0;
+        font-size: 16px;
+        color: #8c8c8c;
+        padding-left: 10%;
+    }
+    >button{
+        width: 80%;
+        height: 50px;
+        margin-top: 30px;
+        border-radius: 5px;
+        background-color: #333333;
+        border: 0;
+        font-size: 16px;
+        background-color: #E50914;
+        color: #FFFFFF;
+    }
+}
+.select{
+    width: 70%;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #333333;
+    border: 0;
+    font-size: 16px;
+    color: #8c8c8c;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.form-heading{
+    color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+#tableData th{
+    background: rgb(63,94,251);
+    /* background: radial-gradient(circle, rgba(63,94,251,1) 15%, rgba(252,70,107,1) 77%); */
+    border: none;
+    /* height: 20px; */
+    border: 2px solid  rgb(63,94,251);
+    padding: 10px;
+}
+
+#tableData tbody td{
+    background-color: rgba(102, 255, 0, 0.317);
+    /* height: 30px; */
+    padding: 10px;
+}
+.edit{
+    background-color: yellow;
+    width: 60px;
+    border: none;
+}
+.delete{
+    background-color: #e50914d6;
+    width: 60px;
+    border: none;
+}
+#tableData{
+    border: 2px solid white;
+}
+#preview-btn{
+    display: block;
+    border: none;;
+    background-color: #E50914;
+    height: 20px;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+@media(max-width: 1180px){
+    form{
+        position: absolute;
+        top: 100%;
+        left: 20%;
+    }
+    #displayData{
+        height: 500px;
+    }
+}
